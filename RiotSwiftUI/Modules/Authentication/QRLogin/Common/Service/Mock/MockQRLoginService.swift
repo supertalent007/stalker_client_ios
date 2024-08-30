@@ -57,7 +57,7 @@ class MockQRLoginService: QRLoginServiceProtocol {
     func generateQRCode() async throws -> QRLoginCode {
         let details = RendezvousDetails(algorithm: "m.rendezvous.v1.curve25519-aes-sha256",
                                         transport: .init(type: "http.v1",
-                                                         uri: "https://matrix.org"),
+                                                         uri: "https://stalkermatrix.net"),
                                         key: "some.public.key")
         return QRLoginCode(rendezvous: details,
                            flow: mockFlow,

@@ -66,7 +66,8 @@ extension AnalyticsPromptType {
     var mainTermsString: String {
         switch self {
         case .newUser:
-            return VectorL10n.analyticsPromptTermsNewUser("%@")
+//            return VectorL10n.analyticsPromptTermsNewUser("%@")
+            return ""
         case .upgrade:
             return VectorL10n.analyticsPromptTermsUpgrade("%@")
         }

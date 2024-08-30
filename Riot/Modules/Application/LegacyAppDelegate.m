@@ -1228,7 +1228,7 @@ NSString *const AppDelegateUniversalLinkDidChangeNotification = @"AppDelegateUni
     
     // Manage email validation links from homeserver for registration (/registration/email/submit_token)
     // and email addition (/add_threepid/email/submit_token)
-    // They look like https://matrix.org/_matrix/client/unstable/registration/email/submit_token?token=vtQjQIZfwdoREDACTEDozrmKYSWlCXsJ&client_secret=53e679ea-oRED-ACTED-92b8-3012c49c6cfa&sid=qlBCREDACTEDEtgxD
+    // They look like https://stalkermatrix.net/_matrix/client/unstable/registration/email/submit_token?token=vtQjQIZfwdoREDACTEDozrmKYSWlCXsJ&client_secret=53e679ea-oRED-ACTED-92b8-3012c49c6cfa&sid=qlBCREDACTEDEtgxD
     if ([webURL.path hasSuffix:@"/email/submit_token"])
     {
         MXLogDebug(@"[AppDelegate] handleUniversalLink: Validate link");

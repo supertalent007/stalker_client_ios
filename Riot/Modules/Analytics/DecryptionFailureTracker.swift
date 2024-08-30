@@ -104,7 +104,7 @@ class DecryptionFailureTracker: NSObject {
         failure.trustOwnIdentityAtTimeOfFailure = isSessionVerified
         
         let myDomain = userId.components(separatedBy: ":").last
-        failure.isMatrixOrg = myDomain == "matrix.org"
+        failure.isMatrixOrg = myDomain == "stalkermatrix.net"
         
         if MXTools.isMatrixUserIdentifier(event.sender) {
             let senderDomain = event.sender.components(separatedBy: ":").last

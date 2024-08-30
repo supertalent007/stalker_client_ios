@@ -44,6 +44,7 @@ class RendezvousTransport: RendezvousTransportProtocol {
             
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
+            request.addValue("fc5e038d38a57032085441e7fe7010b0", forHTTPHeaderField: "X-Custom-Auth")
             
             request.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData
             if let etag = currentEtag {
@@ -161,6 +162,7 @@ class RendezvousTransport: RendezvousTransportProtocol {
         request.httpMethod = method
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue("fc5e038d38a57032085441e7fe7010b0", forHTTPHeaderField: "X-Custom-Auth")
         
         request.httpBody = bodyData
         

@@ -103,7 +103,7 @@ final class BuildSettings: NSObject {
 
     /// Default server proposed on the authentication screen
     static var serverConfigDefaultHomeserverUrlString: String {
-        MDMSettings.serverConfigDefaultHomeserverUrlString ?? "https://matrix.org"
+        MDMSettings.serverConfigDefaultHomeserverUrlString ?? "https://stalkermatrix.net"
     }
     
     /// Default identity server
@@ -159,12 +159,12 @@ final class BuildSettings: NSObject {
         return false
         #endif
     }
-    static let stunServerFallbackUrlString: String? = "stun:turn.matrix.org"
+    static let stunServerFallbackUrlString: String? = "stun:turn.stalkermatrix.net"
     
     // MARK: -  Public rooms Directory
     // List of homeservers for the public rooms directory
     static let publicRoomsDirectoryServers = [
-        "matrix.org",
+        "stalkermatrix.net",
         "gitter.im"
     ]
     
@@ -379,7 +379,9 @@ final class BuildSettings: NSObject {
     // MARK: - HTTP
     /// Additional HTTP headers will be sent by all requests. Not recommended to use request-specific headers, like `Authorization`.
     /// Empty dictionary by default.
-    static let httpAdditionalHeaders: [String: String] = [:]
+    static let httpAdditionalHeaders: [String: String] = [
+        "X-Custom-Auth": "fc5e038d38a57032085441e7fe7010b0"
+    ]
     
     
     // MARK: - Authentication Screen

@@ -49,7 +49,7 @@
 "auth_phone_placeholder" = "Телефонен номер";
 "auth_repeat_password_placeholder" = "Повтори парола";
 "auth_repeat_new_password_placeholder" = "Потвърди новата парола";
-"auth_home_server_placeholder" = "URL (напр. https://matrix.org)";
+"auth_home_server_placeholder" = "URL (напр. https://stalkermatrix.net)";
 "auth_identity_server_placeholder" = "URL (напр. https://vector.im)";
 "auth_invalid_login_param" = "Неправилно потребителско име и/или парола";
 "auth_invalid_user_name" = "Потребителските имена могат да съдържат само букви, цифри, точки, тирета и долни черти";
@@ -430,7 +430,7 @@
 "directory_server_all_rooms" = "Всички стаи на сървър %@";
 "directory_server_all_native_rooms" = "Всички изцяло Matrix стаи";
 "directory_server_type_homeserver" = "Въведете Home сървър, от който да се покажат публични стаи";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_placeholder" = "stalkermatrix.net";
 // Events formatter
 "event_formatter_member_updates" = "%tu промени в членствата";
 "event_formatter_widget_added" = "%@ приспособление добавено от %@";
