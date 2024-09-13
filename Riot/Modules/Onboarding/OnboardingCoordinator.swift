@@ -160,7 +160,8 @@ final class OnboardingCoordinator: NSObject, OnboardingCoordinatorProtocol {
         
         switch result {
         case .register:
-            showUseCaseSelectionScreen()
+//            showUseCaseSelectionScreen()
+            beginAuthentication(with: .registration, onStart: coordinator.stop)
         case .login:
             if BuildSettings.onboardingEnableNewAuthenticationFlow {
                 beginAuthentication(with: .login, onStart: coordinator.stop)

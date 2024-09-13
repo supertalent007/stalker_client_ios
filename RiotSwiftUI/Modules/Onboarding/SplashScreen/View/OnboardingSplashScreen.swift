@@ -101,6 +101,7 @@ struct OnboardingSplashScreen: View {
             Button { viewModel.send(viewAction: .login) } label: {
                 Text(VectorL10n.onboardingSplashLoginButtonTitle)
                     .font(theme.fonts.body)
+                    .accentColor(theme.colors.primaryContent)
                     .padding(12)
             }
         }

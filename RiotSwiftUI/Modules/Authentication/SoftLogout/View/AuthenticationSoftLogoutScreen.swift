@@ -92,6 +92,7 @@ struct AuthenticationSoftLogoutScreen: View {
             Button(action: forgotPassword) {
                 Text(VectorL10n.authenticationLoginForgotPassword)
                     .font(theme.fonts.body)
+                    .accentColor(theme.colors.primaryContent)
             }
             .frame(maxWidth: .infinity, alignment: .trailing)
             .padding(.bottom, 8)

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "callkit_icon.png",
+      "filename" : "Icon-App-20x20@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "callkit_icon@2x.png",
+      "filename" : "Icon-App-20x20@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "callkit_icon@3x.png",
+      "filename" : "Icon-App-20x20@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
